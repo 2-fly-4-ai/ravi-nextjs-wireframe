@@ -1,7 +1,7 @@
 import type { SidebarNavItem, SiteConfig } from "~/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Search Plex",
+  name: "SearchPlex",
   description: "An application built on the t3 stack.",
   url: "https://tx.shadcn.com",
   ogImage: "https://tx.shadcn.com/og.jpg",

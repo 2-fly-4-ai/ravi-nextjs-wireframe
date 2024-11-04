@@ -11,10 +11,10 @@ import { ModeToggle } from "./mode-toggle";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer
-      className={cn("mx-auto flex w-full justify-center border-t", className)}
+      className={cn("mx-auto flex  justify-center border-t w-full", className)}
     >
-      <div className="  py-8">
-        <div className="container grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="container  py-8">
+        <div className=" grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {footerLinks.map((section) => (
             <div key={section.title} className="text-center sm:text-left">
               <span className="text-sm font-medium text-foreground">
@@ -38,51 +38,51 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             <NewsletterForm />
           </div>
         </div>
-      </div>
 
-      <div className="mt-8 border-t pt-8">
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-center text-sm text-muted-foreground sm:text-left">
-            Built by{" "}
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              mickasmt
-            </Link>
-            . Hosted on{" "}
-            <Link
-              href="https://vercel.com"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Vercel
-            </Link>
-            . Illustrations by{" "}
-            <Link
-              href="https://popsy.co"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Popsy
-            </Link>
-            .
-          </p>
+        <div className="mt-8 border-t pt-8">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-center text-sm text-muted-foreground sm:text-left">
+              Built by{" "}
+              <Link
+                href={siteConfig.links.twitter}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                mickasmt
+              </Link>
+              . Hosted on{" "}
+              <Link
+                href="https://vercel.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                Vercel
+              </Link>
+              . Illustrations by{" "}
+              <Link
+                href="https://popsy.co"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                Popsy
+              </Link>
+              .
+            </p>
 
-          <div className="flex items-center gap-3">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              <GithubIcon className="size-5" />
-            </Link>
-            <ModeToggle />
+            <div className="flex items-center gap-3">
+              <Link
+                href={siteConfig.links.github}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                <GithubIcon className="size-5" />
+              </Link>
+              <ModeToggle />
+            </div>
           </div>
         </div>
       </div>
