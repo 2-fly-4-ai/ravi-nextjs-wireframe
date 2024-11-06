@@ -25,16 +25,18 @@ export default function Feature116() {
   ];
 
   return (
-    <section className=" py-16 md:py-24">
+    <section className=" py-16 md:py-24 w-full">
       <div className="mx-auto container w-full">
         <div className="mb-16  ">
           <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-primary">
             Areas of Work
           </h2>
           <p className="text-3xl w-4/5 font-medium leading-relaxed tracking-tight md:text-4xl">
-            Find your place in the parks. Explore our programs and partnerships
-            across the National Park System and see how you can give to the
-            areas you're most passionate about.
+            Harness the{" "}
+            <span className="text-primary font-bold">
+              Power of Next-generation AI
+            </span>{" "}
+            to transform your search capabilities and drive unmatched results.
           </p>
         </div>
 

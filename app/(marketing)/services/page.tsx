@@ -12,6 +12,7 @@ import Link from "next/link";
 import Header1 from "@/app/components/headers/header-services/page";
 import Image from "next/image";
 import Feature82 from "@/app/components/feature82/page";
+import Feature120 from "@/app/components/Feature120/page";
 
 export default function EnhancedServicesPage() {
   const services = [
@@ -62,6 +63,8 @@ export default function EnhancedServicesPage() {
         <img src="/static/images/search-engines.png" />
       </div>
 
+      <Feature120 />
+
       {/* <Feature82 /> */}
       {/* <div className="container py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-">
         {services.map((service, index) => (
@@ -86,38 +89,6 @@ export default function EnhancedServicesPage() {
         ))}
       </div> */}
 
-      <div className="bg-muted/50 py-24">
-        <div className="container flex flex-col items-center gap-11">
-          <p className="text-center text-xl font-medium">
-            Trusted by leading product teams worldwide.
-          </p>
-          <div className="grid grid-cols-2 gap-x-7 gap-y-12 lg:grid-cols-4">
-            {[
-              { logo: "/placeholder.svg", name: "Acme" },
-              { logo: "/placeholder.svg", name: "Creative" },
-              { logo: "/placeholder.svg", name: "Octan" },
-              { logo: "/placeholder.svg", name: "Newco" },
-              { logo: "/placeholder.svg", name: "Contoso" },
-              { logo: "/placeholder.svg", name: "Fabrikam" },
-              { logo: "/placeholder.svg", name: "Litware" },
-              { logo: "/placeholder.svg", name: "Northwind" },
-            ].map((company, index) => (
-              <div key={index} className="flex items-center gap-3">
-                <Image
-                  src={`${company.logo}`}
-                  alt="logo"
-                  width={56}
-                  height={56}
-                  className="h-8 w-auto md:h-14"
-                />
-                <p className="text-xl font-semibold md:text-4xl">
-                  {company.name}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
       <section className="container py-32">
         <h2 className="text-5xl font-bold mb-16 text-center">
           Our Approach to Digital Excellence

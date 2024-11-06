@@ -54,8 +54,8 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   prefetch={true}
                   className={cn(
                     !scrolled
-                      ? "flex items-center text-md font-medium transition-colors  hover:text-white/90 hover:underline hover:underline-offset-4 duration-200 transition-transform"
-                      : "flex items-center text-md font-medium transition-colors hover:text-foreground/80",
+                      ? "flex items-center text-md font-medium transition-all  hover:text-white/90 hover:underline hover:underline-offset-4 duration-200 "
+                      : "flex items-center text-md font-medium transition-all hover:text-foreground/80",
                     !scrolled ? "text-white/90" : "text-foreground",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
@@ -71,7 +71,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
             <ModeToggle />
             <Button
               className={cn(
-                !scrolled ? "bg-white text-black hover:bg-white/90" : ""
+                !scrolled
+                  ? " text-white w-40 hover:text-black hover:bg-white/90"
+                  : "w-40"
               )}
             >
               Book A Call

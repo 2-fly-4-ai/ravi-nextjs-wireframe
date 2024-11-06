@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Header1 from "@/app/components/headers/header-case-studies/page";
+import Header1 from "@/app/components/headers/header-our-team/page";
 
 export default function AboutUsPage() {
   const teamMembers = [

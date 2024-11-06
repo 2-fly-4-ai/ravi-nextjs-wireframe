@@ -1,12 +1,45 @@
 import { CircleArrowRight, Files, Settings } from "lucide-react";
 import Header1 from "@/app/components/headers/header-about/page";
+import Image from "next/image";
 
 export default function About1() {
   return (
     <div className="">
       <Header1 />
       <section className="container mx-auto py-24">
-        <div className="flex flex-col gap-28">
+        <div className="bg-muted/50 py-32">
+          <div className="container flex flex-col items-center gap-11">
+            <p className="text-center text-xl font-medium">
+              Trusted by leading product teams worldwide.
+            </p>
+            <div className="grid grid-cols-2 gap-x-7 gap-y-12 lg:grid-cols-4">
+              {[
+                { logo: "/placeholder.svg", name: "Acme" },
+                { logo: "/placeholder.svg", name: "Creative" },
+                { logo: "/placeholder.svg", name: "Octan" },
+                { logo: "/placeholder.svg", name: "Newco" },
+                { logo: "/placeholder.svg", name: "Contoso" },
+                { logo: "/placeholder.svg", name: "Fabrikam" },
+                { logo: "/placeholder.svg", name: "Litware" },
+                { logo: "/placeholder.svg", name: "Northwind" },
+              ].map((company, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <Image
+                    src={`${company.logo}`}
+                    alt="logo"
+                    width={56}
+                    height={56}
+                    className="h-8 w-auto md:h-14"
+                  />
+                  <p className="text-xl font-semibold md:text-4xl">
+                    {company.name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-28 py-32">
           <div className="grid gap-6 md:grid-cols-2">
             <img
               src="/placeholder.svg"

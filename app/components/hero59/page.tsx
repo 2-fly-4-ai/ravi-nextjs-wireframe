@@ -46,9 +46,9 @@ export default function Hero59() {
       >
         <div className="container mx-auto flex min-h-[60vh] flex-col justify-end pb-8 sm:pb-12 md:pb-16 lg:pb-20">
           <div className="max-w-3xl space-y-4 sm:space-y-6 md:space-y-8">
-            <h1 className="text-white text-3xl font-medium tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Streamline, optimize and enhance business processes with the
-              world's most scalable AI platform.
+            <h1 className="text-white text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              Experience the future of search with Searchplex's AI-driven
+              solutions
             </h1>
             <p className="text-white/90 text-lg sm:text-xl md:text-2xl">
               AI + data, online. At any scale.
@@ -59,7 +59,7 @@ export default function Hero59() {
                 asChild
                 className="text-base sm:text-lg w-full sm:w-auto"
               >
-                <Link href="/trial">Start your free trial</Link>
+                <Link href="/trial">Start Your Free Trial</Link>
               </Button>
               <Button
                 size="lg"
@@ -67,7 +67,7 @@ export default function Hero59() {
                 className="text-base sm:text-lg w-full sm:w-auto"
                 asChild
               >
-                <Link href="/solutions">Our solutions</Link>
+                <Link href="/solutions">See Our solutions</Link>
               </Button>
             </div>
           </div>
