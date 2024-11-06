@@ -20,14 +20,12 @@ interface NavBarProps {
 export function NavBar({ scroll = false }: NavBarProps) {
   const scrolled = useScroll(50);
 
-  const selectedLayout = useSelectedLayoutSegment();
-
   const links = marketingConfig.mainNav;
 
   return (
     <header
       className={`sticky top-0 py-4 z-40 flex items-center w-full justify-center bg-background/60 backdrop-blur-xl transition-all  ${
-        scroll ? (scrolled ? "" : "bg-transparent") : "border-b"
+        scroll ? (scrolled ? "border-b" : "bg-transparent ") : "border-b"
       }`}
     >
       <div className="container flex">
@@ -41,7 +39,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             {/* <Search strokeWidth={2} /> */}
             <span
               className={`font-urban text-xl font-bold ${
-                scrolled ? "text-black" : "text-white/90"
+                scrolled ? "text-black" : "text-black/90"
               }`}
             >
               {siteConfig.name}
@@ -57,7 +55,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   prefetch={true}
                   className={cn(
                     "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 ",
-                    scrolled ? "text-foreground" : "text-white/90",
+                    scrolled ? "text-foreground" : "text-black/90",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >

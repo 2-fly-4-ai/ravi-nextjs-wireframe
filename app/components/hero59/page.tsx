@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Hero59() {
   return (
-    <section className="relative bg-gray-200 -mt-28   w-full overflow-hidden">
+    <section className="relative -mt-28 w-full overflow-hidden">
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -20,8 +20,8 @@ export default function Hero59() {
           }}
           className="relative flex flex-col gap-4 items-center justify-center px-4"
         >
-          <div className=" bg-black/10 absolute inset-0" />
-          <div className="container relative z-10 mx-auto flex   h-[60vh] flex-col justify-end  pb-20">
+          {/* <div className=" bg-black/50 absolute inset-0" /> */}
+          <div className="container relative z-10 mx-auto flex   h-[80vh] flex-col justify-end  pb-20">
             <div className="max-w-3xl space-y-8">
               <h1 className="text-white text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 Streamline, optimize and enhance business processes with the
@@ -34,7 +34,12 @@ export default function Hero59() {
                 <Button size="lg" asChild className="text-lg">
                   <Link href="/trial">Start your free trial</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg" asChild>
+                <Button
+                  size="lg"
+                  variant={"secondary"}
+                  className="text-lg"
+                  asChild
+                >
                   <Link href="/solutions">Our solutions</Link>
                 </Button>
               </div>
