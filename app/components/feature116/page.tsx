@@ -25,7 +25,7 @@ export default function Feature116() {
   ];
 
   return (
-    <section className=" py-16 border md:py-24">
+    <section className=" py-16 md:py-24">
       <div className="mx-auto container w-full">
         <div className="mb-16  ">
           <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">

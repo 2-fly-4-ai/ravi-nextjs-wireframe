@@ -34,7 +34,7 @@ export default function Feature112() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   return (
-    <section className="from-primary/5 via-background to-primary/5 bg-gradient-to-br py-24">
+    <section className="from-primary/5 via-background to-primary/5 bg-gradient-to-br py-32">
       <div className="container">
         <div className="grid gap-16 lg:grid-cols-2">
           <div className="space-y-8">

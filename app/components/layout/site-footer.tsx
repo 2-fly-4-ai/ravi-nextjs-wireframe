@@ -11,7 +11,10 @@ import { ModeToggle } from "./mode-toggle";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer
-      className={cn("mx-auto flex  justify-center border-t w-full", className)}
+      className={cn(
+        "mx-auto flex bg-accent  justify-center border-t w-full",
+        className
+      )}
     >
       <div className="container  py-8">
         <div className=" grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">

@@ -46,7 +46,7 @@ export default function BlogList1() {
   ];
 
   return (
-    <div className=" mx-auto  py-8 border">
+    <div className=" mx-auto py-8">
       <div className="container grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, index) => (
           <Card key={index} className="flex flex-col overflow-hidden">

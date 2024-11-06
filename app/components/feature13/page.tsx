@@ -19,7 +19,7 @@ const features = [
 
 export default function Feature13() {
   return (
-    <section className="py-32 border">
+    <section className="py-32">
       <div className="container ">
         <h2 className="text-3xl font-medium lg:text-4xl">
           A better way to build websites

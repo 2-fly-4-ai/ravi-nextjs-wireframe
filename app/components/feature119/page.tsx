@@ -31,7 +31,7 @@ const features = [
 
 export default function Feature119() {
   return (
-    <section className="container border mx-auto py-16">
+    <section className="container mx-auto py-32">
       <div className="mx-auto">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Column */}

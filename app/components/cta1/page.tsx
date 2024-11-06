@@ -5,7 +5,7 @@ import { Sparkles, ArrowRight } from "lucide-react";
 export default function CallToAction1() {
   return (
     <section className="py-32 w-full">
-      <div className="container border">
+      <div className="container">
         <Card className="w-full flex flex-col justify-between overflow-hidden md:flex-row">
           <CardContent className="p-6 ">
             <div className="mb-2 flex items-center gap-2">

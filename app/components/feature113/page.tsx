@@ -43,7 +43,7 @@ const features = [
 
 export default function Features113() {
   return (
-    <section className="bg-background py-24 border container">
+    <section className="bg-background py-24 container">
       <div className="mb-16 text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
           All you need to build data-driven applications
