@@ -21,9 +21,7 @@ export default function Feature13() {
   return (
     <section className="py-32">
       <div className="container ">
-        <h2 className="text-3xl font-medium lg:text-4xl">
-          A better way to build websites
-        </h2>
+        <h2 className="text-3xl font-medium lg:text-4xl">Case Studies</h2>
         <div className="mt-20 grid gap-9 lg:grid-cols-2">
           {features.map((feature, index) => (
             <div

@@ -63,7 +63,7 @@ export default function EnhancedServicesPage() {
       </div>
 
       {/* <Feature82 /> */}
-      <div className="container py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-">
+      {/* <div className="container py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-">
         {services.map((service, index) => (
           <Card key={index} className="flex flex-col">
             <CardHeader>
@@ -84,7 +84,7 @@ export default function EnhancedServicesPage() {
             </CardFooter>
           </Card>
         ))}
-      </div>
+      </div> */}
 
       <div className="bg-muted/50 py-24">
         <div className="container flex flex-col items-center gap-11">
@@ -168,7 +168,7 @@ export default function EnhancedServicesPage() {
         </div>
       </section>
 
-      <div className="text-center border py-16 bg-accent">
+      <div className="text-center border py-16 bg-muted">
         <h2 className="text-3xl font-bold mb-4">
           Ready to elevate your digital presence?
         </h2>

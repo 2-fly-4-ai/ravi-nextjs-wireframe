@@ -37,7 +37,7 @@ export default function Feature119() {
           {/* Left Column */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-sm text-muted-foreground">About Us</p>
+              <p className="text text-primary font-medium">About Us</p>
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                 Mastering the Art of Effective Communication in the Workplace.
               </h1>
@@ -70,7 +70,7 @@ export default function Feature119() {
           {/* Center Image */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg lg:aspect-auto">
             <Image
-              src="/placeholder.svg"
+              src="https://images.unsplash.com/photo-1493839523149-2864fca44919?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Two people having a conversation in a modern office setting"
               fill
               className="object-cover"

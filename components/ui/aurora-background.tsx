@@ -17,12 +17,13 @@ export const AuroraBackground = ({
     <main className="w-full">
       <div
         className={cn(
-          "relative min-h-[60vh] w-full bg-zinc-900 text-slate-950 transition-bg bg-[url('https://images.unsplash.com/photo-1530053969600-caed2596d242?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-cover",
+          "relative min-h-[60vh] w-full bg-zinc-900 text-slate-950",
           className
         )}
         {...props}
       >
-        <div className="absolute inset-0 overflow-hidden">
+        {/* Aurora Effect Layer */}
+        <div className="absolute inset-0 overflow-hidden z-0">
           <div
             className={cn(
               `
@@ -42,7 +43,9 @@ export const AuroraBackground = ({
             )}
           ></div>
         </div>
-        <div className="relative w-full">{children}</div>
+
+        {/* Content Layer */}
+        <div className="relative z-10 w-full">{children}</div>
       </div>
     </main>
   );

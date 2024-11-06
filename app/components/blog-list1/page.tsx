@@ -47,6 +47,9 @@ export default function BlogList1() {
 
   return (
     <div className=" mx-auto py-8">
+      <div className="container text-4xl font-medium mb-16">
+        Stay Up to Date with the Latest Trends in Search
+      </div>
       <div className="container grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, index) => (
           <Card key={index} className="flex flex-col overflow-hidden">
@@ -60,7 +63,7 @@ export default function BlogList1() {
                   className="aspect-[3/2] object-cover"
                 />
                 <div className="absolute left-4 top-4">
-                  <span className="inline-flex items-center rounded-md bg-primary px-2 py-1 text-sm font-medium">
+                  <span className="inline-flex items-center text-white rounded-md bg-primary px-2 py-1 text-sm font-medium">
                     <Tag className="mr-1 h-3 w-3" />
                     {post.tag}
                   </span>

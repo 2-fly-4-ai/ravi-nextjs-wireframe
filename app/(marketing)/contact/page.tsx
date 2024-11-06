@@ -101,6 +101,30 @@ export default function Contact1() {
                         Answers to all the questions you have
                       </p>
                     </div>
+
+                    <div>
+                      <p>
+                        Searchplex is committed to protecting and respecting
+                        your privacy. We will only use your personal information
+                        to administer your account and to provide the products
+                        and services you requested from us.
+                        <br /> <br />
+                        From time to time, we would like to contact you about
+                        our products and services, as well as other content that
+                        may be of interest to you. If you consent to us
+                        contacting you for this purpose, please tick the box
+                        below so we know you would like us to contact you.
+                        <br /> <br />I agree to receive other communications
+                        from Searchplex. You can unsubscribe from these
+                        communications at any time. For more information on how
+                        to unsubscribe, our privacy practices, and how we are
+                        committed to protecting and respecting your privacy,
+                        please review our Privacy Policy. By clicking submit
+                        below, you consent to allow Searchplex to store and
+                        process your personal information in accordance with our
+                        Privacy Policy.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-12">

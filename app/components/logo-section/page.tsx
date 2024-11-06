@@ -26,12 +26,12 @@ export default function LogoSection() {
   ];
 
   return (
-    <section className="">
-      <Card className="w-full mx-auto">
+    <section className="py-32">
+      <Card className="container w-full mx-auto">
         <CardHeader>
-          {/* <CardTitle className="text-3xl font-bold text-center text-primary">
-          Companies We've Helped
-        </CardTitle> */}
+          <CardTitle className="text-3xl  text-center ">
+            Companies We've Helped
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div
@@ -56,7 +56,7 @@ export default function LogoSection() {
                   src={company.logo}
                   alt={`${company.name} logo`}
                   title={company.title || company.name}
-                  width={158}
+                  width={200}
                   height={48}
                 />
                 <span itemProp="name" className="sr-only">

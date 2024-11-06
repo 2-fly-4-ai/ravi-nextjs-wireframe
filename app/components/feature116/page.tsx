@@ -28,7 +28,7 @@ export default function Feature116() {
     <section className=" py-16 md:py-24">
       <div className="mx-auto container w-full">
         <div className="mb-16  ">
-          <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+          <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-primary">
             Areas of Work
           </h2>
           <p className="text-3xl w-4/5 font-medium leading-relaxed tracking-tight md:text-4xl">

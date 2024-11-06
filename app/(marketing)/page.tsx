@@ -9,6 +9,10 @@ import CallToAction1 from "../components/cta1/page";
 import Feature32 from "../components/feature32/page";
 import CTASection from "../components/cta14/page";
 import LogoSection from "../components/logo-section/page";
+import Feature43 from "../components/feature43/page";
+import SearchSolutions from "../components/search-solutions/page";
+import WhatWeDo from "../components/what-we-do/page";
+import Feature110 from "../components/feature110/page";
 
 export default async function Home() {
   return (
@@ -16,12 +20,20 @@ export default async function Home() {
       <Hero59 />
       <LogoSection />
 
-      <Feature112 />
+      <WhatWeDo />
+
+      <Feature116 />
+
+      {/* <Feature112 /> */}
+      <SearchSolutions />
+
+      <Feature110 />
+
+      <Feature32 />
       <Feature119 />
 
-      <Features113 />
-      <Feature116 />
-      <Feature32 />
+      {/*  */}
+      <Feature43 />
 
       <BlogList1 />
       <Feature13 />

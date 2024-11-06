@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Plus, Minus } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const useCases = [
   {
@@ -58,22 +59,39 @@ export default function Feature112() {
                   onClick={() =>
                     setExpandedIndex(expandedIndex === index ? null : index)
                   }
-                  className="hover:text-primary flex w-full items-center justify-between py-4 text-left text-lg font-medium transition-colors"
+                  className="hover:text-primary text-xl flex w-full items-center justify-between py-4 text-left text-lg font-medium transition-colors"
                 >
                   {useCase.title}
-                  <span className="ml-2">
+                  <motion.span
+                    initial={false}
+                    animate={{ rotate: expandedIndex === index ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
                     {expandedIndex === index ? (
                       <Minus className="h-5 w-5" />
                     ) : (
                       <Plus className="h-5 w-5" />
                     )}
-                  </span>
+                  </motion.span>
                 </button>
-                {expandedIndex === index && (
-                  <div className="text-muted-foreground pb-4">
-                    {useCase.content}
-                  </div>
-                )}
+                <AnimatePresence initial={false}>
+                  {expandedIndex === index && (
+                    <motion.div
+                      initial="collapsed"
+                      animate="expanded"
+                      exit="collapsed"
+                      variants={{
+                        expanded: { opacity: 1, height: "auto" },
+                        collapsed: { opacity: 0, height: 0 },
+                      }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                      <div className="text-muted-foreground text-lg pb-4">
+                        {useCase.content}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ))}
           </div>
