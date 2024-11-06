@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +11,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface BlogPost {
   tag: string;
@@ -120,68 +124,94 @@ export default function BlogPage() {
     },
   ];
 
+  const [selectedTag, setSelectedTag] = useState("All");
+
+  const tags = ["All", ...new Set(posts.map((post) => post.tag))];
+
+  const filteredPosts =
+    selectedTag === "All"
+      ? posts
+      : posts.filter((post) => post.tag === selectedTag);
+
   return (
-    <div className="">
+    <div className="min-h-screen bg-background">
       <Header1 />
 
-      <div className="container py-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post, index) => (
-          <Card key={index} className="flex flex-col overflow-hidden">
-            <CardHeader className="p-0">
-              <div className="relative">
-                <Image
-                  src={post.image}
-                  alt=""
-                  width={600}
-                  height={400}
-                  className="aspect-[3/2] object-cover"
-                />
-                <div className="absolute left-4 top-4">
-                  <span className="inline-flex items-center rounded-md bg-accent px-2 py-1 text-sm font-medium">
-                    <Tag className="mr-1 h-3 w-3" />
-                    {post.tag}
-                  </span>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1 p-6">
-              <h2 className="mb-4 text-2xl font-bold tracking-tight">
-                {post.title}
-              </h2>
-              <p className="text-muted-foreground">{post.description}</p>
-            </CardContent>
-            <CardFooter className="p-6 pt-0">
-              <Link
-                href={post.href}
-                className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+      <main className="container mx-auto px-4 py-32">
+        <Tabs defaultValue="All" className="w-full mb-8">
+          <TabsList className="w-full flex flex-wrap justify-start">
+            {tags.map((tag) => (
+              <TabsTrigger
+                key={tag}
+                value={tag}
+                onClick={() => setSelectedTag(tag)}
+                className="px-4  flex-shrink-0"
               >
-                Read more
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
+                {tag}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </Tabs>
 
-      <div className="border flex items-center justify-center space-x-2 py-16">
-        <Button variant="outline" size="icon">
-          <ChevronLeft className="h-4 w-4" />
-          <span className="sr-only">Previous page</span>
-        </Button>
-        <Button variant="outline" size="sm">
-          1
-        </Button>
-        <Button variant="outline" size="sm">
-          2
-        </Button>
-        <Button variant="outline" size="sm">
-          3
-        </Button>
-        <Button variant="outline" size="icon">
-          <ChevronRight className="h-4 w-4" />
-          <span className="sr-only">Next page</span>
-        </Button>
-      </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {filteredPosts.map((post, index) => (
+            <Card key={index} className="flex flex-col overflow-hidden">
+              <CardHeader className="p-0">
+                <div className="relative">
+                  <Image
+                    src={post.image}
+                    alt=""
+                    width={600}
+                    height={400}
+                    className="aspect-[3/2] object-cover"
+                  />
+                  <div className="absolute left-4 top-4">
+                    <span className="inline-flex items-center rounded-md bg-accent px-2 py-1 text-sm font-medium">
+                      <Tag className="mr-1 h-3 w-3" />
+                      {post.tag}
+                    </span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1 p-6">
+                <h2 className="mb-4 text-2xl font-bold tracking-tight">
+                  {post.title}
+                </h2>
+                <p className="text-muted-foreground">{post.description}</p>
+              </CardContent>
+              <CardFooter className="p-6 pt-0">
+                <Link
+                  href={post.href}
+                  className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+                >
+                  Read more
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+
+        <div className="flex items-center justify-center space-x-2 py-8">
+          <Button variant="outline" size="icon">
+            <ChevronLeft className="h-4 w-4" />
+            <span className="sr-only">Previous page</span>
+          </Button>
+          <Button variant="outline" size="sm">
+            1
+          </Button>
+          <Button variant="outline" size="sm">
+            2
+          </Button>
+          <Button variant="outline" size="sm">
+            3
+          </Button>
+          <Button variant="outline" size="icon">
+            <ChevronRight className="h-4 w-4" />
+            <span className="sr-only">Next page</span>
+          </Button>
+        </div>
+      </main>
     </div>
   );
 }

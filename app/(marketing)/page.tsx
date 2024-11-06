@@ -31,9 +31,9 @@ export default async function Home() {
 
       <Feature32 />
       <Feature119 />
+      <Feature43 />
 
       {/*  */}
-      <Feature43 />
 
       <BlogList1 />
       <Feature13 />

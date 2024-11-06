@@ -8,31 +8,30 @@ export const marketingConfig: MarketingConfig = {
       // disabled: true,
     },
     {
-      title: "About",
-      href: "/about",
+      title: "Case Studies",
+      href: "/case-studies",
     },
-
+    {
+      title: "Our Company",
+      href: "/company",
+      children: [
+        {
+          title: "Our Team",
+          href: "/team",
+        },
+        {
+          title: "About Us",
+          href: "/about",
+        },
+      ],
+    },
     {
       title: "Contact Us",
       href: "/contact",
     },
     {
-      title: "Our team",
-      href: "/team",
-    },
-    {
       title: "Blog",
       href: "/blog",
     },
-    {
-      title: "Case Studies",
-      href: "/case-studies",
-    },
-
-    // {
-    //   title: "Contact",
-    //   href: "/contact",
-    //   disabled: true,
-    // },
   ],
 };

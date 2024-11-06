@@ -29,7 +29,7 @@ export default function LogoSection() {
     <section className="py-32">
       <Card className="container w-full mx-auto">
         <CardHeader>
-          <CardTitle className="text-3xl  text-center ">
+          <CardTitle className="text-xl underline-offset-8 underline  text-center ">
             Companies We've Helped
           </CardTitle>
         </CardHeader>

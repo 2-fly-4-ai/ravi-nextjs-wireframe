@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Header1() {
   return (
-    <div className="relative min-h-[50vh] sm:min-h-[40vh] -mt-16 w-full ">
+    <div className="relative min-h-[50vh] sm:min-h-[40vh] -mt-20 w-full ">
       <div
         className="absolute inset-0 bg-[url('https://imagedelivery.net/Kpcbofvpelk1jdjXmWIr5w/5f065fb2-3a9a-4363-e8d6-b2d6f7cb7300/public')] bg-cover bg-center"
         aria-hidden="true"
@@ -28,9 +28,9 @@ export default function Header1() {
 
       <div className="relative z-10 container py-16">
         <div className="absolute inset-0 z-20"></div>
-        <div className="max-w-3xl mt-12">
+        <div className="max-w-3xl mt-20">
           <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
-            SERVICES
+            OUR EXTENSIVE SERVICES
           </p>
           <h1 className="mb-8 text-white text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
             Get to Know Our Services and Offerings

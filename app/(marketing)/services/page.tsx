@@ -94,7 +94,7 @@ export default function EnhancedServicesPage() {
           Our Approach to Digital Excellence
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
+          <Card className="p-8">
             <h3 className="text-2xl font-semibold mb-4">
               Tailored Solutions for Your Business
             </h3>
@@ -114,8 +114,8 @@ export default function EnhancedServicesPage() {
               expertise, resulting in digital solutions that are both visually
               stunning and functionally robust.
             </p>
-          </div>
-          <div>
+          </Card>
+          <Card className="p-8">
             <h3 className="text-2xl font-semibold mb-4">
               Cutting-Edge Technology, Timeless Design
             </h3>
@@ -135,7 +135,7 @@ export default function EnhancedServicesPage() {
               of innovation and usability is what sets our services apart and
               drives tangible results for your business.
             </p>
-          </div>
+          </Card>
         </div>
       </section>
 

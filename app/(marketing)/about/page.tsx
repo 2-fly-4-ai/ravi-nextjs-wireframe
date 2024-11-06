@@ -6,7 +6,7 @@ export default function About1() {
   return (
     <div className="">
       <Header1 />
-      <section className="container mx-auto py-24">
+      <section className="container mx-auto py-32">
         <div className="bg-muted/50 py-32">
           <div className="container flex flex-col items-center gap-11">
             <p className="text-center text-xl font-medium">

@@ -31,12 +31,12 @@ export default function Feature116() {
           <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-primary">
             Areas of Work
           </h2>
-          <p className="text-3xl w-4/5 font-medium leading-relaxed tracking-tight md:text-4xl">
+          <p className="text-3xl w-4/5 font-bold leading-relaxed tracking-tight md:text-4xl">
             Harness the{" "}
             <span className="text-primary font-bold">
               Power of Next-generation AI
             </span>{" "}
-            to transform your search capabilities and drive unmatched results.
+            to Transform Your Search Capabilities and Drive Unmatched Results.
           </p>
         </div>
 

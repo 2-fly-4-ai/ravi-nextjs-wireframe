@@ -9,7 +9,7 @@ export default function Header1() {
         aria-hidden="true"
       />
 
-      <div className=" min-h-[50vh] sm:min-h-[40vh] -mt-16 w-full">
+      <div className=" min-h-[50vh] sm:min-h-[40vh] -mt-20 w-full">
         <div
           className="absolute inset-0 bg-black bg-opacity-50"
           aria-hidden="true"
@@ -35,7 +35,7 @@ export default function Header1() {
         </div>
 
         <div className="relative z-10 container py-16">
-          <div className="max-w-3xl mt-12">
+          <div className="max-w-3xl mt-20">
             <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
               CASE STUDIES
             </p>

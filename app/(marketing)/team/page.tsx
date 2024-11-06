@@ -35,7 +35,7 @@ export default function AboutUsPage() {
       <div className="">
         {/* <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent to-background"></div> */}
         <Header1 />
-        <div className="relative container py-16">
+        <div className="relative container py-32">
           <div className="mb-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
             {teamMembers.map((member) => (
               <div

@@ -2,16 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronRight } from "lucide-react";
 import { marketingConfig } from "@/app/config/marketing";
 import { siteConfig } from "@/app/config/site";
 import { cn } from "@/lib/utils";
 import { Github } from "lucide-react";
-
 import { ModeToggle } from "./mode-toggle";
 
 export function NavMobile() {
   const [open, setOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const links = marketingConfig.mainNav;
 
   // prevent body scroll when modal is open
@@ -20,8 +20,64 @@ export function NavMobile() {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
+      // Reset active submenu when closing the main menu
+      setActiveSubmenu(null);
     }
   }, [open]);
+
+  const handleSubmenuClick = (title: string) => {
+    setActiveSubmenu(activeSubmenu === title ? null : title);
+  };
+
+  const renderNavItem = (item: any) => {
+    const hasChildren = item.children && item.children.length > 0;
+
+    if (hasChildren) {
+      return (
+        <li key={item.title} className="py-3">
+          <button
+            onClick={() => handleSubmenuClick(item.title)}
+            className="flex w-full items-center justify-between font-medium capitalize"
+          >
+            {item.title}
+            <ChevronRight
+              className={cn(
+                "size-4 transition-transform",
+                activeSubmenu === item.title && "rotate-90"
+              )}
+            />
+          </button>
+          {activeSubmenu === item.title && (
+            <ul className="mt-2 space-y-2 pl-4">
+              {item.children.map((child: any) => (
+                <li key={child.href}>
+                  <Link
+                    href={child.href}
+                    onClick={() => setOpen(false)}
+                    className="block py-2 text-sm text-muted-foreground hover:text-foreground"
+                  >
+                    {child.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      );
+    }
+
+    return (
+      <li key={item.href} className="py-3">
+        <Link
+          href={item.href}
+          onClick={() => setOpen(false)}
+          className="flex w-full font-medium capitalize"
+        >
+          {item.title}
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <>
@@ -46,17 +102,7 @@ export function NavMobile() {
         )}
       >
         <ul className="grid divide-y divide-muted">
-          {links.map(({ title, href }) => (
-            <li key={href} className="py-3">
-              <Link
-                href={href}
-                onClick={() => setOpen(false)}
-                className="flex w-full font-medium capitalize"
-              >
-                {title}
-              </Link>
-            </li>
-          ))}
+          {links.map((item) => renderNavItem(item))}
         </ul>
 
         <div className="mt-5 flex items-center justify-end space-x-4">
@@ -70,3 +116,5 @@ export function NavMobile() {
     </>
   );
 }
+
+export default NavMobile;

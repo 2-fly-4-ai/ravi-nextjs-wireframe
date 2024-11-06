@@ -57,17 +57,17 @@ export default function Hero59() {
               <Button
                 size="lg"
                 asChild
-                className="text-base sm:text-lg w-full sm:w-auto"
+                className="text-base p-6 sm:text-lg w-full sm:w-auto"
               >
                 <Link href="/trial">Start Your Free Trial</Link>
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
-                className="text-base sm:text-lg w-full sm:w-auto"
+                className="text-base p-6 sm:text-lg w-full sm:w-auto"
                 asChild
               >
-                <Link href="/solutions">See Our solutions</Link>
+                <Link href="/solutions">Our Search Solutions</Link>
               </Button>
             </div>
           </div>
