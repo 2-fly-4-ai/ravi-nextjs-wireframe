@@ -30,7 +30,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
   return (
     <header
       className={cn(
-        "sticky top-0 z-40 flex items-center backdrop-blur w-full justify-center transition-all",
+        "sticky top-0 z-40  items-center backdrop-blur w-full justify-center transition-all",
         scroll
           ? scrolled
             ? "bg-background/90 backdrop-blur-xl py-4"
@@ -56,7 +56,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           </span>
         </Link>
 
-        <NavigationMenu>
+        <NavigationMenu className="sm:flex hidden">
           <NavigationMenuList>
             {links.map((item, index) => (
               <NavigationMenuItem key={index}>

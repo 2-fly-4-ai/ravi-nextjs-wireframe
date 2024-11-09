@@ -1,21 +1,20 @@
 import { Badge } from "@/components/ui/badge";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Header1() {
   return (
-    <section className="relative">
+    <section className="relative -mt-20 overflow-hidden">
       <div
-        className="absolute inset-0 bg-[url('https://imagedelivery.net/Kpcbofvpelk1jdjXmWIr5w/428e1496-7636-4e65-f1da-6f8890bf9800/public')] bg-cover"
+        className="absolute inset-0 bg-[url('https://imagedelivery.net/Kpcbofvpelk1jdjXmWIr5w/428e1496-7636-4e65-f1da-6f8890bf9800/public')] bg-cover bg-center"
         aria-hidden="true"
       />
 
-      <div className=" min-h-[50vh] sm:min-h-[40vh] -mt-20 w-full">
+      <div className="relative min-h-[50vh] w-full flex items-center">
         <div
           className="absolute inset-0 bg-black bg-opacity-50"
           aria-hidden="true"
         />
 
-        <div className="absolute inset-0 z-20">
+        <div className="absolute inset-0 z-10">
           <div
             className={`
             [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
@@ -34,19 +33,25 @@ export default function Header1() {
           />
         </div>
 
-        <div className="relative z-10 container py-16">
-          <div className="max-w-3xl mt-20">
-            <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
+          <div className="max-w-3xl">
+            <p className="mb-4 text-xs sm:text-sm font-bold tracking-wider text-[#6366F1]">
               CASE STUDIES
             </p>
-            <h1 className="mb-8 text-4xl font-medium text-white tracking-tight sm:text-5xl md:text-6xl">
+            <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white tracking-tight">
               See How Companies Grow with Searchplex
             </h1>
-            <div className="flex gap-3">
-              <Badge variant="secondary" className="rounded-full px-4 py-1">
+            <div className="flex flex-wrap gap-2">
+              <Badge
+                variant="secondary"
+                className="rounded-full px-3 py-1 text-xs sm:text-sm"
+              >
                 VESPA-AI
               </Badge>
-              <Badge variant="secondary" className="rounded-full px-4 py-1">
+              <Badge
+                variant="secondary"
+                className="rounded-full px-3 py-1 text-xs sm:text-sm"
+              >
                 LEGALTECH
               </Badge>
             </div>

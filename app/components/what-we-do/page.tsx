@@ -61,26 +61,23 @@ export default function WhatWeDo() {
     <section className="from-primary/5 via-background to-primary/5 bg-gradient-to-br py-32">
       <div className="container">
         <div className="grid gap-16 lg:grid-cols-2 items-start">
-          <div className="space-y-8 lg:sticky lg:top-24">
+          <div className="space-y-8 lg:top-24">
             <Badge>What We Do</Badge>
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
               Search Strategic Consulting
             </h2>
-            <p className="text-muted-foreground text-xl">
-              Search products are technical and complex. Managing it either from
-              a product or an engineering function, requires a deep
-              understanding of both product and engineering domains.
+            <p className="text-muted-foreground text-lg">
+              Search represents the vital intersection of technical
+              infrastructure and user experience, where engineering decisions
+              directly impact discovery and engagement. Every architectural
+              choice must be strategically aligned with user needs to deliver
+              optimal results.
               <br /> <br />
-              It demands not just a thorough comprehension of architectural
-              decisions, scalability, and performance, but also an understanding
-              of how these technical choices impact the user's overall search
-              experience.
-            </p>
-            <p className="text-muted-foreground text-xl">
-              Leveraging our deep expertise in AI and search technology, our
-              strategic consulting services provide expert guidance in steering
-              your search technology initiatives and teams, in both engineering
-              and product functions.
+              Our consulting practice combines deep technical expertise in AI
+              and search technology with proven product strategy. We partner
+              with engineering and product teams to implement solutions that
+              balance technical excellence with exceptional user experience,
+              driving measurable business outcomes.
             </p>
           </div>
 

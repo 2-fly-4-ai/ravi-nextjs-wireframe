@@ -13,7 +13,7 @@ export default function Header1() {
           <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
             CONTACT US
           </p>
-          <h1 className="mb-8 text-white text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mb-8 text-white text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Got Search Needs? Contact Us to Find a Solution
           </h1>
           <div className="flex gap-3">

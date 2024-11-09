@@ -16,12 +16,11 @@ export default function SearchSolutions() {
             <CardTitle className=" text-xl">Build for your vision</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">
-              For startups and businesses looking to build a robust search
-              product, we provide the foundation and expertise to kickstart your
-              journey. Our solutions are designed to help you establish a solid
-              search infrastructure, setting the stage for your product
-              development.
+            <p className="text-muted-foreground ">
+              Turn your search vision into reality. We help startups and growing
+              businesses build powerful, scalable search infrastructure from day
+              one. Get the foundation right and accelerate your development
+              journey.
             </p>
           </CardContent>
         </Card>
@@ -31,12 +30,10 @@ export default function SearchSolutions() {
             <CardTitle className=" text-xl">Extend your capabilities</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">
-              If your existing search technology lacks the advanced capabilities
-              or features necessary to thrive in today's competitive landscape,
-              we're here to supercharge it. Our team adds the vital components
-              you need to stay at the forefront of your industry, delivering
-              unmatched user experiences.
+            <p className="text-muted-foreground ">
+              Enhance your existing search with cutting-edge AI features. We
+              integrate advanced capabilities that drive better relevance and
+              deeper insights, keeping you ahead of competition.
             </p>
           </CardContent>
         </Card>
@@ -46,12 +43,10 @@ export default function SearchSolutions() {
             <CardTitle className=" text-xl">Optimize for excellence</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">
-              For businesses with search infrastructure that may be struggling
-              with performance issues or relevance problems, we optimize your
-              existing search technology. Our goal is to enhance efficiency and
-              ensure your search results are precise, helping you deliver a
-              seamless user experience.
+            <p className="text-muted-foreground ">
+              Maximize your search performance. We solve relevance challenges
+              and scaling issues, delivering faster results and higher accuracy
+              while reducing complexity.
             </p>
           </CardContent>
         </Card>

@@ -11,10 +11,10 @@ export default function Hero59() {
       <div className="absolute inset-0 bg-[url('https://imagedelivery.net/Kpcbofvpelk1jdjXmWIr5w/7ae15108-a876-4483-0a7a-486344674b00/public')] bg-cover bg-no-repeat z-0" />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/20 z-10" />
+      <div className="absolute inset-0 bg-black/20 " />
 
       {/* Aurora effect layer */}
-      <div className="absolute inset-0 z-20">
+      <div className="absolute inset-0 ">
         <div
           className={`
             [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
@@ -42,9 +42,9 @@ export default function Hero59() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative z-30 flex flex-col gap-4 items-center justify-center px-4 py-12 sm:py-16 md:py-20 lg:py-24"
+        className="relative  flex flex-col gap-4 items-center justify-center px-4 py-12 sm:py-16 md:py-20 lg:py-24"
       >
-        <div className="container mx-auto flex min-h-[60vh] flex-col justify-end pb-8 sm:pb-12 md:pb-16 lg:pb-20">
+        <div className="container mx-auto flex min-h-[50vh] flex-col justify-end pb-8 sm:pb-12 md:pb-16 lg:pb-20">
           <div className="max-w-3xl space-y-4 sm:space-y-6 md:space-y-8">
             <h1 className="text-white text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Experience the future of search with Searchplex's AI-driven

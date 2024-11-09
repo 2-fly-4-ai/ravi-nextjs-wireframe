@@ -29,10 +29,10 @@ export default function Header1() {
       <div className="relative z-10 container py-16">
         <div className="absolute inset-0 z-20"></div>
         <div className="max-w-3xl mt-20">
-          <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
+          <p className="mb-6 text-sm font-bold tracking-wider text-[#6366F1]">
             OUR EXTENSIVE SERVICES
           </p>
-          <h1 className="mb-8 text-white text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mb-8 text-white text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Get to Know Our Services and Offerings
           </h1>
           <div className="flex gap-3">

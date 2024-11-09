@@ -15,7 +15,7 @@ export default function Header1() {
           aria-hidden="true"
         />
 
-        <div className="absolute inset-0 z-20">
+        <div className="absolute inset-0  z-20">
           <div
             className={`
             [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
@@ -39,7 +39,7 @@ export default function Header1() {
             <p className="mb-6 text-sm font-medium tracking-wider text-[#6366F1]">
               READ OUR BLOG
             </p>
-            <h1 className="mb-8 text-4xl font-medium text-white tracking-tight sm:text-5xl md:text-6xl">
+            <h1 className="mb-8 text-4xl font-bold text-white tracking-tight sm:text-5xl md:text-6xl">
               Stay Up-to-date with the Latest Search Trends
             </h1>
             <div className="flex gap-3">

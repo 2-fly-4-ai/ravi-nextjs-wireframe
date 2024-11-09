@@ -32,11 +32,10 @@ export default function Feature116() {
             Areas of Work
           </h2>
           <p className="text-3xl w-4/5 font-bold leading-relaxed tracking-tight md:text-4xl">
-            Harness the{" "}
+            Harness the Power{" "}
             <span className="text-primary font-bold">
-              Power of Next-generation AI
+              of Next-generation AI Search
             </span>{" "}
-            to Transform Your Search Capabilities and Drive Unmatched Results.
           </p>
         </div>
 
